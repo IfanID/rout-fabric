@@ -1,0 +1,26 @@
+# Gradle
+.gradle/
+build/
+out/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# Fabric/Loom
+.cache/
+run/
+logs/
+remappedSrc/
+
+# Logs
+*.log
+
+# OS-specific
+.DS_Store
+
+# Local properties
+local.properties
