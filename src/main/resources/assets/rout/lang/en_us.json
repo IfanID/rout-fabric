@@ -1,0 +1,15 @@
+{
+  "title.rout.config": "Rout Configuration",
+  "category.rout.general": "General",
+  "option.rout.commandAlias": "Command Alias",
+  "tooltip.rout.commandAlias": "Sets the alias for the /rout command.",
+  "tooltip.rout.commandAlias.restart": "Requires a game restart for changes to take effect.",
+  "option.rout.language": "Language",
+  "command.rout.info.header": "--- Mod Info %s ---",
+  "command.rout.info.version": "Version: %s",
+  "command.rout.info.description": "Description: %s",
+  "command.rout.info.authors": "Authors: %s",
+  "command.rout.info.license": "License: %s",
+  "command.rout.info.command_used": "Command used: %s",
+  "command.rout.info.error": "Could not find information for mod '%s'."
+}

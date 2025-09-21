@@ -3,7 +3,7 @@
 	"package": "respawn.outbase.rout.mixin.client",
 	"compatibilityLevel": "JAVA_21",
 	"client": [
-		"ExampleClientMixin"
+		"ClientMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

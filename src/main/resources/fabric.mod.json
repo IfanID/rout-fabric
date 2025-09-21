@@ -2,15 +2,12 @@
 	"schemaVersion": 1,
 	"id": "rout",
 	"version": "${version}",
-	"name": "rout",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Rout",
+	"description": "Mod klien sederhana yang menyediakan perintah /rout untuk menampilkan informasi mod dan mengelola alias perintah. Memungkinkan kustomisasi alias perintah dan pilihan bahasa di dalam game.",
 	"authors": [
-		"Me!"
+		"Ifan"
 	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
+	"contact": {},
 	"license": "CC0-1.0",
 	"icon": "assets/rout/icon.png",
 	"environment": "client",
@@ -20,6 +17,9 @@
 		],
 		"fabric-datagen": [
 			"respawn.outbase.rout.RoutDataGenerator"
+		],
+		"modmenu": [
+			"respawn.outbase.rout.config.RoutModMenuIntegration"
 		]
 	},
 	"mixins": [
@@ -35,6 +35,6 @@
 		"fabric-api": "*"
 	},
 	"suggests": {
-		"another-mod": "*"
+		"modmenu": "*"
 	}
 }

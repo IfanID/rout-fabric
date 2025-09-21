@@ -11,6 +11,7 @@ import net.fabricmc.loader.api.metadata.Person;
 import net.minecraft.command.CommandRegistryAccess;
 import net.minecraft.text.Text;
 import respawn.outbase.rout.config.RoutConfig;
+import respawn.outbase.rout.util.LangManager;
 
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -32,19 +33,19 @@ public class RoutCommands {
 
             if (modContainerOpt.isPresent()) {
                 ModMetadata meta = modContainerOpt.get().getMetadata();
-                context.getSource().sendFeedback(Text.literal("§a--- Informasi Mod " + meta.getName() + " ---"));
-                context.getSource().sendFeedback(Text.literal("§fVersi: §e" + meta.getVersion().getFriendlyString()));
-                context.getSource().sendFeedback(Text.literal("§fDeskripsi: §7" + meta.getDescription()));
+                context.getSource().sendFeedback(Text.literal(LangManager.get("command.rout.info.header", meta.getName())));
+                context.getSource().sendFeedback(Text.literal(LangManager.get("command.rout.info.version", meta.getVersion().getFriendlyString())));
+                context.getSource().sendFeedback(Text.literal(LangManager.get("command.rout.info.description", meta.getDescription())));
 
                 String authors = meta.getAuthors().stream()
                         .map(Person::getName)
                         .collect(Collectors.joining(", "));
-                context.getSource().sendFeedback(Text.literal("§fPembuat: §b" + authors));
+                context.getSource().sendFeedback(Text.literal(LangManager.get("command.rout.info.authors", authors)));
 
-                context.getSource().sendFeedback(Text.literal("§fLisensi: §d" + meta.getLicense()));
-                context.getSource().sendFeedback(Text.literal("§8Perintah yang digunakan: " + context.getInput()));
+                context.getSource().sendFeedback(Text.literal(LangManager.get("command.rout.info.license", meta.getLicense())));
+                context.getSource().sendFeedback(Text.literal(LangManager.get("command.rout.info.command_used", context.getInput())));
             } else {
-                context.getSource().sendError(Text.literal("Tidak dapat menemukan informasi untuk mod '" + COMMAND_NAME + "'."));
+                context.getSource().sendError(Text.literal(LangManager.get("command.rout.info.error", COMMAND_NAME)));
             }
             return 1;
         };

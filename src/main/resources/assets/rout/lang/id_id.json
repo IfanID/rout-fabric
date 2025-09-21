@@ -1,0 +1,15 @@
+{
+  "title.rout.config": "Konfigurasi Rout",
+  "category.rout.general": "Umum",
+  "option.rout.commandAlias": "Alias Perintah",
+  "tooltip.rout.commandAlias": "Mengatur alias untuk perintah /rout.",
+  "tooltip.rout.commandAlias.restart": "Memerlukan restart game agar perubahan diterapkan.",
+  "option.rout.language": "Bahasa",
+  "command.rout.info.header": "--- Informasi Mod %s ---",
+  "command.rout.info.version": "Versi: %s",
+  "command.rout.info.description": "Deskripsi: %s",
+  "command.rout.info.authors": "Pembuat: %s",
+  "command.rout.info.license": "Lisensi: %s",
+  "command.rout.info.command_used": "Perintah yang digunakan: %s",
+  "command.rout.info.error": "Tidak dapat menemukan informasi untuk mod '%s'."
+}
